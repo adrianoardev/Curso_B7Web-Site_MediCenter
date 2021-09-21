@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex; /* Usamos o display flex para centralizar junto com justity-content */
+    justify-content: center; /* Centraliza o header no centro da tela */
+    height: 120px; /* Definição da altura do header */
+}
+
+.container {
+    display: flex; /* Conteúdo fica um ao lado do outro no header */
+    justify-content: space-between; /* Faz com que um conteúdo fique de um lado e um do outro */
+    width: 990px; /* Largura utilizada no header */     
+
+}
+
+.logo {    
+    display: flex; /* Display flex, para podermos alinhar a imagem da logo*/
+    align-items: center; /* Alinhamento da logo no centro (vertical/esquerda) do container */
+}
+
+.menu {
+    display: flex; /* Display flex, para podermos alinhar a imagem da logo*/
+    align-items: center; /* Alinhamento da logo no centro (vertical/direita) do container */
+    
+    
+}
+
+nav ul, 
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;       
+}
+nav ul {
+    display: flex;    
+}
+
+nav a {
+    display: block; /* Usamos o block = Para podermos alterar tamanho, area do link */
+    padding: 15px; /* Espaçamento entorno dos links de menu do header */
+    text-decoration: none; /* remoção do sublinhado dos nomes do menu */
+    text-transform: uppercase; /* Deixa todo o texto em maiúsculo */
+    color: #727272; /* cor do texto de menu */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte dos textos de menu */
+}
+
+nav .active a, 
+nav a:hover {
+    background-color: #39aae1 ;
+    color: #fff; /* Ao passar o mouse emcima do menu o texto fica na cor determinada (branca)*/
+}
+
+#banner {
+    background-image: url('../img/img1.jpg'); 
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
