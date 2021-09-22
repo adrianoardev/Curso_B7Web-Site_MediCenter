@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica; /* Todo que está no body terá esta fonte */
+}
 body {
     margin: 0;
     padding: 0;
@@ -12,8 +15,7 @@ header {
 .container {
     display: flex; /* Conteúdo fica um ao lado do outro no header */
     justify-content: space-between; /* Faz com que um conteúdo fique de um lado e um do outro */
-    width: 990px; /* Largura utilizada no header */     
-
+    width: 990px; /* Largura utilizada no header */ 
 }
 
 .logo {    
@@ -24,38 +26,123 @@ header {
 .menu {
     display: flex; /* Display flex, para podermos alinhar a imagem da logo*/
     align-items: center; /* Alinhamento da logo no centro (vertical/direita) do container */
-    
-    
 }
 
-nav ul, 
-nav li {
-    list-style: none;
+nav ul, nav li {
+    list-style: none; /* Remove o ( pontinho que é criado automaticamente ao fazer uma lista ) */
     margin: 0;
     padding: 0;       
 }
 nav ul {
-    display: flex;    
+    display: flex; /* Todos os nomes do Menu, ficaram um ao lado do outro auomaticamente */    
 }
 
 nav a {
-    display: block; /* Usamos o block = Para podermos alterar tamanho, area do link */
+    display: block; /* Usamos o block = Para podermos alterar tamanho, area do link do Menu */
     padding: 15px; /* Espaçamento entorno dos links de menu do header */
     text-decoration: none; /* remoção do sublinhado dos nomes do menu */
     text-transform: uppercase; /* Deixa todo o texto em maiúsculo */
     color: #727272; /* cor do texto de menu */
     font-family: Arial, Helvetica, sans-serif; /* Fonte dos textos de menu */
+    font-weight: bold;
 }
 
-nav .active a, 
-nav a:hover {
+nav .active a, nav a:hover {
     background-color: #39aae1 ;
     color: #fff; /* Ao passar o mouse emcima do menu o texto fica na cor determinada (branca)*/
 }
 
 #banner {
+    display: flex;
+    justify-content: center;
     background-image: url('../img/img1.jpg'); 
-    background-position: center;
-    background-size: cover;
+    background-position: center; /* Cenralizar a imagem na tela */
+    background-size: cover; /* Em monitores grandes a imagem vai ser expandida, em pequenos reduzida */
     height: 670px;
 }
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.banner_headline h1 {
+    color: #fff; /* Cor do texto ( Top notch experience ) */
+    font-size: 70px; /* Tamanho do Texto ( Top notch experience ) */
+    text-shadow: 0px 1px 0px #555; /* Sombreamento no texto para baixo */ 
+    margin: 0;
+    padding: 0; 
+    max-width: 350px;  /* Area maxima fixa do texto h1 */
+}
+
+.banner_headline h2 {
+    color: #fff; /* Cor do texto (Medicenter is a responsive template...  ) */
+    font-size: 21px; /* Tamanho do Texto (Medicenter is a responsive template... ) */
+    text-shadow: 0px 1px 0px #555; /* Sombreamento no texto para baixo */  
+    margin: 0;
+    padding: 0; 
+    max-width: 350px;  /* Area maxima fixa do texto h2 */
+    margin-top: 30px;
+}
+
+
+.banner_options {  
+    height: 210px; /* Altura do container */
+    display: flex;    
+}
+
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.banner1 {
+    background-color: #39aae1;
+}
+
+.banner2 {
+    background-color: #0079c7;
+}
+
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner_title {
+    font-size: 21px;
+}
+
+.banner_desc {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.banner_horario {
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px; /* Espaçamento do primeiro menu para o titulo ( Opening Hours)*/
+    padding:10px; /* Espaçamento vertical entre os elementos do horário */
+    margin-bottom: 10px; /* Espaçamento na parte inferior */
+    border-bottom: 1px solid #FFF;
+    font-size: 14px;
+}
+
+
