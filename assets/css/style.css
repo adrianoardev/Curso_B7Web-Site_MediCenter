@@ -300,6 +300,27 @@ footer {
     background-color: #2b4c99;
 }
 
+.footer-mc {
+    color: #727272;
+    font-size: 13px; 
+    line-height: 20px;   
+}
+
+.footer-mr {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 20px;    
+}
+.years {
+    color: #0079c7;
+    line-height: 20px;
+}
+
+.widget-body-lt {
+
+}
+
+
 .footer-area{
     display: flex;        
 }
