@@ -300,26 +300,78 @@ footer {
     background-color: #2b4c99;
 }
 
+
+/* Medicenter Clinic Footer */
 .footer-mc {
     color: #727272;
     font-size: 13px; 
-    line-height: 20px;   
+    line-height: 18px;
+    margin-right: 10px; 
+}
+.endereco {      
+    color: #727272;
+    font-size: 13px;
+    margin-top: 28px;
+    line-height: 18px;    
 }
 
-.footer-mr {
+.footer-end-tel {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 18px; 
+    margin-right: 15px;    
+}
+
+.tel {
+    padding-right: 50px;
+}
+
+.email {
+    color: white;
+    font-size: 13px;
+}
+
+.footer-lp2, .footer-lp3{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+/* Latest Posts Footer */
+.footer-lp {
     color: #FFF;
     font-size: 13px;
-    line-height: 20px;    
+    line-height: 18px; 
+    margin-right: 15px;   
 }
+
 .years {
     color: #0079c7;
+    font-size: 11px;
     line-height: 20px;
 }
 
-.widget-body-lt {
-
+/* Latest Tweets Footer */
+.footer-lt {
+    color: #727272;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 15px;
 }
 
+.footer-lt2 {
+    color: #727272;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.branco {
+    color: white;
+}
 
 .footer-area{
     display: flex;        
