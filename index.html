@@ -5,7 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fontawesome.com/v5.15/icons/phone-square-alt?style=solid">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+ <script type="text/javascript">
+    window.onload=function(){
+        document.querySelector(".menuMobile").addEventListener("click", function (){
+            if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+            } else{
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }        
+        });
+    };
+    </script>
+    
     <title>MediCenter</title>
 </head>
 <body>
@@ -18,8 +31,14 @@
 
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                    </div>
+
                     <ul>
-                        <li class="active"><a href="">HOME</a></li> <!-- Deixa o Menu HOME como ativo -->
+                        <li class="active"><a href="">HOME</a></li> <!-- active = Deixa o Menu HOME como ativo -->
                         <li><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
@@ -174,12 +193,12 @@
                     </div>
 
                     <div class="widget-body-departaments">                        
-                        <div>DPT 1</div>
-                        <div>DPT 2</div>
-                        <div>DPT 3</div>
-                        <div>DPT 4</div>
-                        <div>DPT 5</div>
-                        <div>DPT 6</div>                       
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                       
                     </div>
                 </div>                       
                 
@@ -193,16 +212,16 @@
                             <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                         </div>
                         <div class="contato">                           
-                            <div>Phone:<a href="tel:+55 11 2222-2222">+55 11 2222-2222</a></div>                            
+                            <div><i class="fas fa-phone-square phone"></i> Phone:<a href="tel:+55 11 2222-2222">+55 (11) 2222-2222</a></div>                            
                         </div>
 
                         <div class="contato">
-                            <div>E-mail: <a href="mailto:">medicenter@medicenter.com.br</a></div>                            
+                            <div class=""><i class="fas fa-envelope mail"></i> E-mail: <a href="mailto:">medicenter@medicenter.com.br</a></div>                            
                         </div>
 
                         <div class="contato">
-                            <div>Whatsapp:
-                                <a href="tel:+5511 99999-9999"> +5511 99999-9999</a>
+                            <div><i class="fab fa-whatsapp-square zap"></i> Whatsapp:
+                                <a href="tel:+5511 99999-9999"> +55 (11) 99999-9999</a>
                             </div>                            
                         </div>
 
